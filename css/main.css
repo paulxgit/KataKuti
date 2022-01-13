@@ -70,3 +70,8 @@
 .board__tile--winner {
     color: green;
 }
+
+.me {
+    font-family: cursive;
+    font-weight: 800 ;
+}
