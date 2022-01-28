@@ -1,80 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #app {
-    border: 1px solid black;
-    width: 600px;
-    height: 600px;
-    font-family: sans-serif;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
+  border: 1px solid black;
+  width: 600px;
+  height: 600px;
+  font-family: sans-serif;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    background: #222;
+  display: flex;
+  align-items: center;
+  background: #222;
 }
 
 .header > * {
-    color: #eeeeee;
+  color: #eeeeee;
 }
 
 .header__turn {
-    padding: 12px;
+  padding: 12px;
 }
 
 .header__status {
-    padding: 12px;
-    flex-grow: 1;
-    text-align: center;
+  padding: 12px;
+  flex-grow: 1;
+  text-align: center;
 }
 
 .header__restart {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    outline: none;
-    background: none;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
 }
 
 .board {
-    display: grid;
-    background: #cccccc;
-    gap: 10px;
-    padding: 10px;
-    flex-grow: 1;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+  display: grid;
+  background: #cccccc;
+  gap: 10px;
+  padding: 10px;
+  flex-grow: 1;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .board__tile {
-    background: #ffffff;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 80px;
-    font-family: cursive;
-    color: #222222;
+  background: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  font-family: cursive;
+  color: #222222;
 }
 
 .board__tile:hover {
-    background: #cccccc;
+  background: #cccccc;
 }
 
 .board__tile--winner {
-    color: green;
+  color: green;
 }
 
 .me {
-    font-family: cursive;
-    font-weight: 800 ;
+  font-family: cursive;
+  font-weight: 800;
 }
